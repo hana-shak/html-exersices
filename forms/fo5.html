@@ -9,8 +9,7 @@
   width:50%;
   display: block;
   margin:auto;
-  text-align:center;
-}
+  }
 
 legend{
 background-color:white;
@@ -21,14 +20,14 @@ text-align:left;
 </head>
 <body>
 <form>
-<fieldset> 
-<legend>Personal details</legend>
 
+<fieldset >  
+<legend>Personal details</legend>
+  <div text-align:center>
   <label for="fname">Username:</label>
   <input type="text" id="fname" name="fname" ><br>
   <label for="lname">Password:</label>
   <input type="password" id="lname" name="lname"><br>
-  <input type="login"  value="login"><br>
   <label for="fname">Email:</label>
   <input type="email"><br>
   <label for="fname">Gender:</label>
@@ -36,9 +35,10 @@ text-align:left;
   <label for="male">Male</label>
   <input type="radio" id="female" name="gender" value="female">
   <label for="female">Female</label>
+</div>
   </fieldset>
   
-<fieldset> 
+<fieldset text-align:left;> 
 <legend>Magazines</legend>
  <input type="checkbox" id="vehicle1" name="Stavanger Aftenblad" value="Stavanger Aftenblad">
  <label for="vehicle1"> Stavanger Aftenblad</label><br>
@@ -52,11 +52,17 @@ text-align:left;
 
 <fieldset> 
 <legend>Subscription</legend>
-<label for="Month period">Period:</label>
+<label for="period">Period:</label>
 
- <input type="number" id="quantity" name="quantity" min="1" max="12" step="1" value="4" >
+<select id="period" name="months">
+  <option value="2months">2months</option>
+  <option value="4months">4months</option>
+  <option value="6months">6months</option>
+  <option value="8months">8months</option>
+</select>
  </fieldset>
-<input type="submit" value="Subscribe"  >
+ 
+<input style="align-item:center;"" type="submit" value="Subscribe"  >
 
 </form> 
 
